@@ -12,8 +12,8 @@ def ftpDownloader(host, path, fileName):
     aftp.close()
 
 
-host = ""
-path = ""
-fileName = ""
+host = input("Enter the host URL:")
+path = input("Enter the path where you want to save the download:")
+fileName = input("Enter the name for the downloaded file:")
 
 ftpDownloader(host, path, fileName)

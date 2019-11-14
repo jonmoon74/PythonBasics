@@ -13,7 +13,7 @@ def ftpDownloader(host, path, fileName):
 
 
 host = input("Enter the host URL:")
-path = input("Enter the path where you want to save the download:")
+path = "/Users/jonmoon/Downloads"
 fileName = input("Enter the name for the downloaded file:")
 
 ftpDownloader(host, path, fileName)

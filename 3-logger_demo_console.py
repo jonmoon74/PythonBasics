@@ -3,6 +3,7 @@ Logger Demo
 """
 import logging
 
+
 class LoggerDemoConsole():
 
     def testLog(self):
@@ -15,8 +16,7 @@ class LoggerDemoConsole():
         consoleHandler.setLevel(logging.INFO)
 
         # create formatter
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s: %(message)s',
-                    datefmt='%m/%d/%Y %I:%M:%S %p')
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
         # add formatter to console handler
         consoleHandler.setFormatter(formatter)
@@ -30,6 +30,7 @@ class LoggerDemoConsole():
         logger.warn('warn message')
         logger.error('error message')
         logger.critical('critical message')
+
 
 demo = LoggerDemoConsole()
 demo.testLog()

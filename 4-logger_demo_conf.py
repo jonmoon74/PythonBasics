@@ -4,6 +4,7 @@ Logger Demo
 import logging
 import logging.config
 
+
 class LoggerDemoConf():
 
     def testLog(self):
@@ -17,6 +18,7 @@ class LoggerDemoConf():
         logger.warn('warn message')
         logger.error('error message')
         logger.critical('critical message')
+
 
 demo = LoggerDemoConf()
 demo.testLog()

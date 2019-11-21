@@ -1,6 +1,7 @@
 import logging
 import loggingpackage.custom_logger as cl
 
+
 class LoggingDemo2():
 
     log = cl.customLogger(logging.DEBUG)
@@ -27,6 +28,7 @@ class LoggingDemo2():
         m3Log.warn('warn message')
         m3Log.error('error message')
         m3Log.critical('critical message')
+
 
 demo = LoggingDemo2()
 demo.method1()
